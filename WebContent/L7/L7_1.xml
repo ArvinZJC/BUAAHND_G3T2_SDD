@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE students [
+	<!ELEMENT students (student+)>
+	<!ELEMENT student (id,papers,name,email)>
+	<!ELEMENT id (#PCDATA)>
+	<!ELEMENT papers (idCard|passport)>
+	<!ELEMENT idCard (#PCDATA)>
+	<!ELEMENT passport (#PCDATA)>
+	<!ELEMENT name (first,last)>
+	<!ELEMENT first (#PCDATA)>
+	<!ELEMENT last (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+	
+	<!ATTLIST student nation CDATA "China">
+	<!ATTLIST student tel CDATA "12345678">
+	<!ATTLIST student weChat CDATA #IMPLIED>
+	<!ATTLIST student qq CDATA #IMPLIED>
+]>
+<students>
+	<student nation="USA" tel="13579246" weChat="btbtb">
+    	<id>S1</id>
+    	<papers>
+    		<passport>EE111111</passport>
+    	</papers>
+    	<name>
+			<first>Cake</first>
+			<last>Tab</last>
+		</name>
+    	<email>studentct@126.com</email>
+	</student>
+	<student tel="12334567" weChat="aaaa" qq="1132422">
+    	<id>S2</id>
+    	<papers>
+    		<idCard>210203193403030303</idCard>
+    	</papers>
+    	<name>
+			<first>Peter</first>
+			<last>Pane</last>
+		</name>
+    	<email>studentpp@126.com</email>
+	</student>
+</students>

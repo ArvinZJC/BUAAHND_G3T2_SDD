@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<members xmlns="http://www.w3school.com.cn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3school.com.cn Outcome2_Schema.xsd">
+    <member id="1">
+        <name>Fred Moonstone</name>
+        <address>
+            <line1>12 Watling Street</line1>
+            <town>Belshill</town>
+            <postcode>ML2 ABC</postcode>
+        </address>
+        <gender>M</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>1998-01-01</dob>
+        <religion>Christian</religion>
+        <dateJoined>2005-06-12</dateJoined>
+        <section>Scout</section>
+        <phoneNumbers>
+            <phoneNumber>
+            	<type>Mobile</type>
+            	<content>0780 123456</content>
+            </phoneNumber>
+            <phoneNumber>
+            	<type>Home</type>
+            	<content>01698 123456</content>
+            </phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+        	<progressBadge>
+        		<id>1</id>
+        		<content>Promise Challenge</content>
+        	</progressBadge>
+        	<progressBadge>
+        		<id>2</id>
+        		<content>Outdoor Challenge</content>
+        	</progressBadge>
+        </progressBadges>
+        <activityBadges>
+        	<activityBadge>
+        		<id>1</id>
+        		<content>Emergency Aid</content>
+        	</activityBadge>
+        </activityBadges>
+    </member>
+    <member id="2">
+        <name>Wilma Moonstone</name>
+        <address>
+            <line1>12 Watling Street</line1>
+            <town>Belshill</town>
+            <postcode>ML2 ABC</postcode>
+        </address>
+        <gender>F</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>1999-01-01</dob>
+        <religion>Christian</religion>
+        <dateJoined>2006-06-12</dateJoined>
+        <section>Cub Scout</section>
+        <phoneNumbers>
+        	<phoneNumber>
+            	<type>Mobile</type>
+            	<content>0780 123456</content>
+            </phoneNumber>
+            <phoneNumber>
+            	<type>Home</type>
+            	<content>01698 123456</content>
+            </phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+        	<progressBadge>
+        		<id>1</id>
+        		<content>Promise Challenge</content>
+        	</progressBadge>
+        </progressBadges>
+        <activityBadges>
+        	<activityBadge>
+        		<id>1</id>
+        		<content>Emergency Aid</content>
+        	</activityBadge>
+        	<activityBadge>
+        		<id>2</id>
+        		<content>Information Technology</content>
+        	</activityBadge>
+        </activityBadges>
+    </member>
+    <member id="3">
+        <name>Barney Debris</name>
+        <address>
+            <line1>1 Birmingham Place</line1>
+            <line2>The Quarry</line2>
+            <town>Birmingham</town>
+            <postcode>BB1 123</postcode>
+        </address>
+        <gender>M</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>2002-01-01</dob>
+        <religion>Muslim</religion>
+        <dateJoined>2009-06-12</dateJoined>
+        <section>Beaver</section>
+        <phoneNumbers>
+        	<phoneNumber>
+            	<type>Mobile</type>
+            	<content>0780 111111</content>
+            </phoneNumber>
+            <phoneNumber>
+            	<type>Home</type>
+            	<content>01698 111111</content>
+            </phoneNumber>
+            <phoneNumber>
+            	<type>Work</type>
+            	<content>01234 567899</content>
+            </phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+            <progressBadge>
+        		<id>1</id>
+        		<content>Promise Challenge</content>
+        	</progressBadge>
+        </progressBadges>
+    </member>
+</members>

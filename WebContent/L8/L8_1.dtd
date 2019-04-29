@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT classes (class+)>
+<!ELEMENT class ((name|(firstName,lastName)),tel, (weChat|email|qq))>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT weChat (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT qq (#PCDATA)>
+
+<!ATTLIST class id CDATA #REQUIRED>
+<!ATTLIST class monitor IDREF #REQUIRED>
+<!ATTLIST class major CDATA #REQUIRED>
+<!ATTLIST class college CDATA #FIXED "buaa">
+<!ATTLIST name sid ID #REQUIRED>
+<!ATTLIST name gender (F|M) "M">
+<!ATTLIST firstName fsid ID #REQUIRED>
+<!ATTLIST firstName fgender (F|M) "M">

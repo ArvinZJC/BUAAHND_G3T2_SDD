@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE members [
+	<!ELEMENT members (member+)>
+	<!ELEMENT member (name,address,gender,dob,religion,dateJoined,section,phoneNumbers,progressBadges,activityBadges*)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT address (lines,town,postcode)>
+	<!ELEMENT lines (line+)>
+	<!ELEMENT line (#PCDATA)>
+	<!ELEMENT town (#PCDATA)>
+	<!ELEMENT postcode (#PCDATA)>
+	<!ELEMENT gender (#PCDATA)>
+	<!ELEMENT dob (#PCDATA)>
+	<!ELEMENT religion (#PCDATA)>
+	<!ELEMENT dateJoined (#PCDATA)>
+	<!ELEMENT section (#PCDATA)>
+	<!ELEMENT phoneNumbers (phoneNumber+)>
+	<!ELEMENT phoneNumber (#PCDATA)>
+	<!ELEMENT progressBadges (progressBadge+)>
+	<!ELEMENT progressBadge (#PCDATA)>
+	<!ELEMENT activityBadges (activityBadge+)>
+	<!ELEMENT activityBadge (#PCDATA)>
+	
+	<!ATTLIST member number CDATA #REQUIRED>
+	<!ATTLIST line id CDATA #REQUIRED>
+	<!ATTLIST phoneNumber type (Mobile|Home|Work) #REQUIRED>
+	<!ATTLIST progressBadge id CDATA #REQUIRED>
+	<!ATTLIST activityBadge id CDATA #REQUIRED>
+]>
+<members>
+    <member number="a1">
+        <name>Fred Moonstone</name>
+        <address>
+        	<lines>
+        		<line id="1">12 Watling Street</line>
+        	</lines>
+            <town>Belshill</town>
+            <postcode>ML2 ABC</postcode>
+        </address>
+        <gender>M</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>1/1/1998</dob>
+        <religion>Christian</religion>
+        <dateJoined>12/6/2005</dateJoined>
+        <section>Scout</section>
+        <phoneNumbers>
+            <phoneNumber type="Mobile">0780 123456</phoneNumber>
+            <phoneNumber type="Home">01698 123456</phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+            <progressBadge id="1">Promise Challenge</progressBadge>
+            <progressBadge id="2">Outdoor Challenge</progressBadge>
+        </progressBadges>
+        <activityBadges>
+            <activityBadge id="1">Emergency Aid</activityBadge>
+        </activityBadges>
+    </member>
+    <member number="a2">
+        <name>Wilma Moonstone</name>
+        <address>
+            <lines>
+        		<line id="1">12 Watling Street</line>
+        	</lines>
+            <town>Belshill</town>
+            <postcode>ML2 ABC</postcode>
+        </address>
+        <gender>F</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>1/1/1999</dob>
+        <religion>Christian</religion>
+        <dateJoined>12/6/2006</dateJoined>
+        <section>Cub Scout</section>
+        <phoneNumbers>
+            <phoneNumber type="Mobile">0780 123456</phoneNumber>
+            <phoneNumber type="Home">01698 123456</phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+            <progressBadge id="1">Promise Challenge</progressBadge>
+        </progressBadges>
+        <activityBadges>
+            <activityBadge id="1">Emergency Aid</activityBadge>
+            <activityBadge id="2">Information Technology</activityBadge>
+        </activityBadges>
+    </member>
+    <member number="a3">
+        <name>Barney Debris</name>
+        <address>
+        	<lines>
+        		<line id="1">1 Birmingham Place</line>
+            	<line id="2">The Quarry</line>
+        	</lines>
+            <town>Birmingham</town>
+            <postcode>BB1 123</postcode>
+        </address>
+        <gender>M</gender>
+        <!-- "dob" is the abbreviation of "date of birth" -->
+        <dob>1/1/2002</dob>
+        <religion>Muslim</religion>
+        <dateJoined>12/6/2009</dateJoined>
+        <section>Beaver</section>
+        <phoneNumbers>
+            <phoneNumber type="Mobile">0780 111111</phoneNumber>
+            <phoneNumber type="Home">01698 111111</phoneNumber>
+            <phoneNumber type="Work">01234 567899</phoneNumber>
+        </phoneNumbers>
+        <progressBadges>
+            <progressBadge id="1">Promise Challenge</progressBadge>
+        </progressBadges>
+    </member>
+</members>

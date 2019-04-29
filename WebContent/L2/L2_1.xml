@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person name="Zhang Li" gender="Female">
+        <award id="1">
+            <title>Beauty Contestant</title>
+            <age>25</age>
+        </award>
+        <award id="2">
+            <title>National English Competition</title>
+            <age>26</age>
+        </award>
+        <award id="3">
+            <title>Draft Competition</title>
+            <age>29</age>
+        </award>
+    </person>
+    <person name="Zhang Qiang" gender="Male">
+        <award id="1">
+            <title>Master Sportsman</title>
+            <age>23</age>
+        </award>
+        <award id="2">
+            <title>Draft Competition</title>
+            <age>26</age>
+        </award>
+    </person>
+</persons>

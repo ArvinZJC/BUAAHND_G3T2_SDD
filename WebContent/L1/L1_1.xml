@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<classes>
+    <class id="1">
+        <teacher>
+            <name>Arvin</name>
+            <subject>English</subject>
+        </teacher>
+        <student id="1">
+            <position>monitor</position>
+            <name>Tom</name>
+        </student>
+        <student id="2">
+            <position>vice-monitor</position>
+            <name>Tim</name>
+        </student>
+        <student id="3">
+            <position>ordinary</position>
+            <name>Mark</name>
+        </student>
+        <student id="4">
+            <position>ordinary</position>
+            <name>Jack</name>
+        </student>
+    </class>
+    <class id="2">
+        <teacher>
+            <name>Mary</name>
+            <subject>Chemistry</subject>
+        </teacher>
+        <student id="1">
+            <position>monitor</position>
+            <name>Jary</name>
+        </student>
+        <student id="2">
+            <position>vice-monitor</position>
+            <name>Gay</name>
+        </student>
+        <student id="3">
+            <position>ordinary</position>
+            <name>May</name>
+        </student>
+        <student id="4">
+            <position>ordinary</position>
+            <name>Joe</name>
+        </student>
+    </class>
+</classes>

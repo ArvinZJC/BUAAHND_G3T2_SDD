@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3school.com.cn" xmlns="http://www.w3school.com.cn" elementFormDefault="qualified">
+	<xs:element name="members">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="member" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="20" />
+										<xs:minLength value="3" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="address">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="line1">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="25" />
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="line2" minOccurs="0">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="25" />
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="town">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="15" />
+													<xs:minLength value="1" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="postcode">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[A-Z0-9]{3}\s[A-Z0-9]{3}" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="gender">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="M" />
+										<xs:enumeration value="F" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="dob" type="xs:date" />
+							<xs:element name="religion">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="15" />
+										<xs:minLength value="1" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="dateJoined" type="xs:date" />
+							<xs:element name="section">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Beaver" />
+										<xs:enumeration value="Cub Scout" />
+										<xs:enumeration value="Scout" />
+										<xs:enumeration value="Explorer" />
+										<xs:enumeration value="Network" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="phoneNumbers">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="phoneNumber" maxOccurs="3">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="type">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:enumeration value="Mobile" />
+																<xs:enumeration value="Home" />
+																<xs:enumeration value="Work" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="content">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[0-9]{4,5}\s[0-9]{6}" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="progressBadges">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="progressBadge" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="id" type="xs:integer" />
+													<xs:element name="content">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="25" />
+																<xs:minLength value="1" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="progressBadgeIdUnique">
+												<xs:selector xpath="id" />
+												<xs:field xpath="." />
+											</xs:unique>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="activityBadges" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="activityBadge" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="id" type="xs:integer" />
+													<xs:element name="content">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="25" />
+																<xs:minLength value="1" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="activityBadgeIdUnique">
+												<xs:selector xpath="id" />
+												<xs:field xpath="." />
+											</xs:unique>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:integer" use="required" />
+					</xs:complexType>
+					<xs:unique name="memberUnique">
+						<xs:selector xpath="member" />
+						<xs:field xpath="@id" />
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+    	</xs:complexType>
+	</xs:element>
+</xs:schema>

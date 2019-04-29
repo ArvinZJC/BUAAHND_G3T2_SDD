@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT students (class+)>
+<!ELEMENT class (student+,teacher,monitor)>
+<!ELEMENT student ((name|(firstname,lastname)),age,tel)>
+<!ELEMENT teacher (firstname,lastname,tel)>
+<!ELEMENT monitor (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+
+<!ATTLIST class id ID #REQUIRED>
+<!ATTLIST class name CDATA #REQUIRED>
+<!ATTLIST student id ID #REQUIRED>
+<!ATTLIST student member (yes|no) "no">
+<!ATTLIST teacher id ID #REQUIRED>
+<!ATTLIST monitor id IDREF #REQUIRED>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE students SYSTEM "L8_2.dtd">
+<students>
+ 	<class id='C1' name='16 SD'>
+  		<student id='S01'  member='no'>
+    		<name>Tom</name>
+    		<age>19</age>
+    		<tel>1111111</tel>
+  		</student>
+  		<student id='S22'  member='yes'>
+    		<firstname>Tom</firstname>
+    		<lastname>Jim</lastname>
+    		<age>18</age>
+    		<tel>111321</tel>
+  		</student>
+    	<student id='S20'>
+    		<firstname>Jack</firstname>
+    		<lastname>Sap</lastname>
+    		<age>18</age>
+    		<tel>111321</tel>
+  		</student>
+  		<teacher id='T01'>
+    		<firstname>mimi</firstname>
+    		<lastname>fan</lastname>
+   			<tel>111999</tel>
+  		</teacher>
+  		<monitor id='S22'></monitor>
+ 	</class>
+  	<class id='C2' name='17 SD'>
+  		<student id='S31'  member='yes'>
+    		<name>Kom</name>
+    		<age>20</age>
+   			<tel>222222</tel>
+  		</student>
+  		<student id='S32'  member='yes'>
+    		<name>Anim</name>
+    		<age>18</age>
+    		<tel>222321</tel>
+  		</student>
+  		<teacher id='T02'>
+    		<firstname>mimi</firstname>
+    		<lastname>fan</lastname>
+   			<tel>111999</tel>
+  		</teacher>
+  		<monitor id='S32'></monitor>
+ 	</class>
+</students>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE classes SYSTEM "L8_1.dtd">
+<classes>
+	<class id="1" monitor="c1-7" major="SD">
+		<firstName fsid="c1-7">Arvin</firstName>
+		<lastName>Zhao</lastName>
+		<tel>741741741</tel>
+		<weChat>test</weChat>
+	</class>
+	<class id="2" monitor="c2-1" major="SD">
+		<name sid="c2-1" gender="F">James</name>
+		<tel>741741742</tel>
+		<email>test@qq.com</email>
+	</class>
+</classes>

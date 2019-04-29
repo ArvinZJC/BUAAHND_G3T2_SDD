@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "L6_2.dtd">
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <header>Reminder</header>
+    <body>Do not forget me this weekend.</body>
+</note>

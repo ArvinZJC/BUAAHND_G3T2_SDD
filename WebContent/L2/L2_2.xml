@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+    <course name="GU2">
+        <class id="1">
+            <teacher>
+                <name>Zhao</name>
+                <tel>000</tel>
+            </teacher>
+            <student id="1">
+                <name>Arvin</name>
+                <tel>001</tel>
+            </student>
+            <student id="2">
+                <name>Lee</name>
+                <tel>002</tel>
+            </student>
+            <student id="3">
+                <name>James</name>
+                <tel>003</tel>
+            </student>
+        </class>
+        <class id="2">
+            <teacher>
+                <name>Mei</name>
+                <tel>100</tel>
+            </teacher>
+            <student id="1">
+                <name>Tom</name>
+                <tel>101</tel>
+            </student>
+            <student id="2">
+                <name>Tim</name>
+                <tel>102</tel>
+            </student>
+            <student id="3">
+                <name>Mary</name>
+                <tel>103</tel>
+            </student>
+        </class>
+    </course>
+    <course name="XML">
+        <class id="1">
+            <teacher>
+                <name>Zhao</name>
+                <tel>000</tel>
+            </teacher>
+            <student id="1">
+                <name>Mark</name>
+                <tel>004</tel>
+            </student>
+            <student id="2">
+                <name>Yvonne</name>
+                <tel>005</tel>
+            </student>
+            <student id="3">
+                <name>Peter</name>
+                <tel>006</tel>
+            </student>
+        </class>
+    </course>
+</courses>

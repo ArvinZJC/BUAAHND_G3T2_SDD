@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Outcome 3 - Viewer</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script>
+		/** Load the specified XML/XSL file. */
+		function loadXMLDoc(filename) {
+  			if (window.ActiveXObject) {
+      			xhttp = new ActiveXObject("Msxml2.XMLHTTP"); // for IE
+  			} else {
+      			xhttp = new XMLHttpRequest(); // for Chrome, Firefox, etc.
+  			}
+  			xhttp.open("GET", filename, false);
+  			try {
+				xhttp.responseType = "msxml-document";
+			} catch(e) {
+				alert("Error! Your browser cannot handle this script.");
+			}
+  			xhttp.send("");
+      		return xhttp.responseXML;
+  		};
+		
+  		/** Display the XSLT result. */
+  		function displayResult(xmlPath, xslPath) {
+			xml = loadXMLDoc(xmlPath);
+			xsl = loadXMLDoc(xslPath);
+			if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+  				document.getElementById("result-area").innerHTML = xml.transformNode(xsl); // for IE
+    		} else if (document.implementation && document.implementation.createDocument) {
+  				xsltProcessor = new XSLTProcessor(); // for Chrome, Firefox, etc.
+  				xsltProcessor.importStylesheet(xsl);
+  				document.getElementById("result-area").innerHTML = "";
+  				document.getElementById("result-area").appendChild(xsltProcessor.transformToFragment(xml, document));
+  			}
+		};
+	</script>
+</head>
+<body>
+	<div class="m-3">
+		<!--
+		<button type="button" class="btn btn-dark" onclick="displayResult('https://xqing.me/Assessment_3_2019.xml', 'Outcome3_Remote_StyleSheet1.xsl')">Remote 1</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('https://xqing.me/Assessment_3_2019.xml', 'Outcome3_Remote_StyleSheet2.xsl')">Remote 2</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('https://xqing.me/Assessment_3_2019.xml', 'Outcome3_Remote_StyleSheet3.xsl')">Remote 3</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('https://xqing.me/Assessment_3_2019.xml', 'Outcome3_Remote_StyleSheet4.xsl')">Remote 4</button>
+		-->
+		<button type="button" class="btn btn-dark" onclick="displayResult('Outcome3_Remote.xml', 'Outcome3_Remote_StyleSheet1.xsl')">Remote 1</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('Outcome3_Remote.xml', 'Outcome3_Remote_StyleSheet2.xsl')">Remote 2</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('Outcome3_Remote.xml', 'Outcome3_Remote_StyleSheet3.xsl')">Remote 3</button>
+		<button type="button" class="btn btn-dark" onclick="displayResult('Outcome3_Remote.xml', 'Outcome3_Remote_StyleSheet4.xsl')">Remote 4</button>
+		<button type="button" class="btn btn-secondary" onclick="displayResult('Outcome3_Local.xml', 'Outcome3_Local_StyleSheet1.xsl')">Local 1</button>
+		<button type="button" class="btn btn-secondary" onclick="displayResult('Outcome3_Local.xml', 'Outcome3_Local_StyleSheet2.xsl')">Local 2</button>
+		<button type="button" class="btn btn-secondary" onclick="displayResult('Outcome3_Local.xml', 'Outcome3_Local_StyleSheet3.xsl')">Local 3</button>
+		<button type="button" class="btn btn-secondary" onclick="displayResult('Outcome3_Local.xml', 'Outcome3_Local_StyleSheet4.xsl')">Local 4</button>
+	</div>
+	<div id="result-area" class="mx-3"></div>
+</body>
+</html>
