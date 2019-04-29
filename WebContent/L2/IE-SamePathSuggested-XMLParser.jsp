@@ -1,3 +1,5 @@
+<%-- JSP file that pracitises implementing an XML parser for IE --%>
+
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 
 <!DOCTYPE html>
